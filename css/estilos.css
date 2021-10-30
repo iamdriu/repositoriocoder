@@ -114,6 +114,12 @@ body{
     margin-bottom: 1rem;
     margin-left: 5rem;
 }
+.secundarioRoom, h5{
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    color: green;
+    font-weight:600
+}
 
 .secundarioFelices{
     height: 250px;
