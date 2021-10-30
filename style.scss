@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+@import "_menu";
+@import "_contenido";
+@import "_footer"
+
+
+

@@ -1,0 +1,57 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+#arriba {
+  background-color: #4B6587;
+  color: cornsilk;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10vh;
+}
+
+.banner {
+  background-color: #4B6587;
+  color: cornsilk;
+  display: flex;
+}
+
+.logo {
+  width: 60px;
+}
+
+.barra {
+  padding: 50px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.barra, li {
+  display: inline-block;
+}
+
+.barra, a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: cornsilk;
+  padding: 1rem;
+}
+
+.barra, a:hover {
+  color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
