@@ -10,7 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/estilos.css">
+
 
 </head>
 <body>
@@ -20,6 +22,7 @@
                 <img src="../imagenes/logo.jfif" alt="" class="logo"></a>
         </div>
         <nav class="barra">
+            <div class="container">
             <ul>
                 <li><a href="../formularios/nosotros.html">Nosotros</a></li>
                 <li><a href="../formularios/alojamiento.html">Alojamiento</a> </li>
@@ -29,44 +32,51 @@
                 <li><a href="../formularios/contacto.html">Contacto</a> </li>
                 <li><a href="../formularios/logueo.html">Iniciar Sesión</a></li>
             </ul>
+        </div>
         </nav>
     </header>
-
+    <div class="container">
     <main class="alojamientoPrincipal">
-        <h1>Nuestras Habitaciones</h1>
+        
+        <h1>OFERTAS</h1>
  
         <p class="alojamientoBody">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nulla labore inventore blanditiis earum nobis necessitatibus quo nisi harum voluptatibus. Placeat vel velit voluptates rerum enim magni dolorem impedit possimus.</p>
-
+    
     </main>
+</div>
 
-    <section id="secundario">
+     <section id="secundario">
         <!--Contenido secundario-->
-        <div>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-4">
             <img src="../imagenes/suite.jpg" alt="" class="secundarioRoom">
             <h2>Suite</h2>
         <p class="roomText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique temporibus neque quos, voluptatum porro quas, maiores dolores praesentium corporis alias dolorem asperiores reprehenderit laudantium aut impedit quaerat assumenda magnam.</p>
+        <h5>$5.000,00</h5>
         </div>
-        
 
-        <div>
+        <div class="col-sm-4">
             <img src="../imagenes/matrimonial.jpg" alt="" class="secundarioFelices">
             <h2>Matrimonial</h2>
         <p class="roomText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique temporibus neque quos, voluptatum porro quas, maiores dolores praesentium corporis alias dolorem asperiores reprehenderit laudantium aut impedit quaerat assumenda magnam.</p>
+        <h5>$7.000,00</h5>
         </div>
-        
 
-        <div>
+        <div class="col-sm-4">
             <img src="../imagenes/single.jpg" alt="" class="secundarioCowork">
             <h2>Single</h2>
         <p class="roomText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ab quis minus perferendis fuga aperiam fugit illo iste quasi autem, ratione exercitationem. Veniam laborum a consectetur velit obcaecati neque animi?</p>
+        <h5>$10.000,00</h5>
         </div>
-        
+    </div>
+    </div>
         
     </section>
 
     <footer class="footer">
         <div class="bloqueFooter">
-            <div>
+            <div class="container">
                 <h4>Acerca de</h4>
                 <ul class="footerMenu">
                     <li> <a href="#">Hotel</a></li>
@@ -74,7 +84,7 @@
                     <li> <a href="#">Contactos</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="container">
                 <h4>Reservas</h4>
                 <ul class="footerMenu">
                     <li> <a href="#">Buscar Reserva</a></li>
@@ -82,7 +92,7 @@
                     <li> <a href="#">Eventos y Reuniones</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="container">
                 <h4>Explorar</h4>
                 <ul class="footerMenu">
                     <li> <a href="#">Experiencias</a></li>
@@ -101,6 +111,7 @@
         <div class="maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.4176310957286!2d-58.41639044346466!3d-34.59747653583094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca87e0062057%3A0xd8d1fece0a653f1e!2sUniversidad%20de%20Palermo%2C%20Facultad%20de%20Dise%C3%B1o%20y%20Comunicaci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1633749567588!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        <div class="container">
         <div class="legales">
             <ul>
                 <li><a href="#">Aviso Legal</a></li>
@@ -108,9 +119,10 @@
                 <li><a href="#">Cookies</a></li>
             </ul>
         </div>
-        </div>
+    </div>
+        </div class="container">
         <div class="footerCredito">Desarrollado por Andrés Martinez</div>
         </footer>
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
