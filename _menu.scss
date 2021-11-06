@@ -16,7 +16,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 10vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .banner{
@@ -25,19 +28,26 @@ body{
     display: flex;
 }
 .logo{
-    width: 80px;
+    width: 90px;
+    line-height: 80px;
 }
 
 .barra{
-    padding: 50px;
+    padding: 10px;
     list-style-type: none;
-    display: flex; 
-    flex-direction: row;
-   align-items: center;
+    align-items: center;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .barra, li{
     display: inline-block;
+    width: max-content;
+    padding-bottom: 1rem;
+    display: flex; 
+    flex-direction: column;
 }
 
 .barra, a{
@@ -45,11 +55,115 @@ body{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .barra, a:hover{
     color: grey;
+}
+
+.barra--toogle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding-bottom: 0 20px;
+    line-height: 60px;
+    display: block;
+}
+
+/*--TABLET--*/
+
+@media screen and (min-width: 768px) {
+    #arriba{
+        height: 12vh;
+    }
+    
+    .barra{
+        padding: 50px;
+        list-style-type: none;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        left: 100%;
+        transition: left    0.3s;
+    }
+    
+    .barra, li{
+        display: inline-block;
+        width: max-content;
+    }
+    
+    .barra, a{
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .barra, a:hover{
+        color: grey;
+    }
+    .barra--toogle{
+        color: white;
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding-bottom: 0 20px;
+        line-height: 60px;
+        display: block;
+    }
+    .barra--menu__visible{
+    left: 0;
+    }
+}
+
+/*--ESCRITORIO--*/
+
+@media screen and (min-width: 900px) {
+    #arriba{
+        background-color: black;
+        color: cornsilk;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 12vh;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .barra{
+        padding: 50px;
+        list-style-type: none;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        transition: none;
+    }
+    
+    .barra, li{
+        display: inline-block;
+        width: max-content;
+    }
+    
+    .barra, a{
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: white;
+        padding: 1rem;
+    }
+
+    .barra--toogle{
+        display: none;
+    }
 }

@@ -4,6 +4,7 @@
     color: cornsilk;
     padding: 2rem;
     margin-top: 2rem;
+    text-size-adjust: auto;
     .bloqueFooter{
         display: flex;
         justify-content: space-around;
@@ -14,24 +15,32 @@
     }
 }
 
-.footerMenu{
-    list-style: none;
-    text-align: center;
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-        line-height: 1rem;
-        flex-wrap: wrap;
-    }
-} 
+.footer--menu{
+    color: cornsilk;
+    align-content: center;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    .footer--menu--item{
+        list-style: none;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            line-height: 1rem;
+            flex-wrap: wrap;
+        }
+    } 
+}
 
-.footerCredito {
+
+
+.footer--credito {
     text-align: center;
     padding: 1rem;
     font-size: 0.7rem;
 }
 
-.redes{
+.footer--redes{
     display: inline-block;
 }

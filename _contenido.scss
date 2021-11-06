@@ -1,5 +1,5 @@
 #principal{
-    padding: 2rem;
+    padding: 8rem;
     display: grid;
     grid-template-areas:
     "videoPrincipal tituloPrincipal"
@@ -174,7 +174,7 @@ table, th, td{
 /*-----Sobre Nosotros----*/
 
 .nosotrosPrincipal{
-    padding: 2rem;
+    padding: 8rem;
     display: grid;
     grid-template-areas:
     "alojamientoTitulo"
@@ -244,7 +244,7 @@ table, th, td{
 /*-----Alojamiento----*/
 
 .alojamientoPrincipal{
-    padding: 2rem;
+    padding: 8rem;
     display: grid;
     grid-template-areas:
     "alojamientoTitulo"
@@ -273,7 +273,7 @@ table, th, td{
 /*-----CSS Login----*/
 
   #form0{
-    padding: 2rem;
+    padding: 10rem;
     display: grid;
     grid-template-areas:
     "saludo"
@@ -375,7 +375,7 @@ table, th, td{
     height: 800px;
     background: black;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 150px;
     box-shadow: 7px 13px 37px #000;
     padding: 2rem;
     color: white;
