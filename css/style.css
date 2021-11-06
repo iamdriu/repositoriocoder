@@ -86,53 +86,14 @@ body {
   display: block;
 }
 
+.barra--menu__visible {
+  left: 0;
+}
+
 /*--TABLET--*/
 @media screen and (min-width: 768px) {
-  #arriba {
-    height: 12vh;
-  }
-
-  .barra {
-    padding: 50px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    left: 100%;
-    transition: left 0.3s;
-  }
-
-  .barra, li {
-    display: inline-block;
-    width: max-content;
-  }
-
   .barra, a {
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    color: white;
-    padding: 1rem;
-  }
-
-  .barra, a:hover {
-    color: grey;
-  }
-
-  .barra--toogle {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding-bottom: 0 20px;
-    line-height: 60px;
-    display: block;
-  }
-
-  .barra--menu__visible {
-    left: 0;
+    font-size: 0.8rem;
   }
 }
 /*--ESCRITORIO--*/
