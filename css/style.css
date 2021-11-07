@@ -56,9 +56,7 @@ body {
 
 .barra, li {
   display: inline-block;
-  width: max-content;
   padding-bottom: 1rem;
-  display: flex;
   flex-direction: column;
 }
 
@@ -74,20 +72,6 @@ body {
 
 .barra, a:hover {
   color: grey;
-}
-
-.barra--toogle {
-  color: white;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding-bottom: 0 20px;
-  line-height: 60px;
-  display: block;
-}
-
-.barra--menu__visible {
-  left: 0;
 }
 
 /*--TABLET--*/
@@ -111,6 +95,10 @@ body {
     left: 0;
   }
 
+  .banner {
+    display: flex;
+  }
+
   .barra {
     padding: 50px;
     list-style-type: none;
@@ -121,6 +109,7 @@ body {
   }
 
   .barra, li {
+    display: flex;
     display: inline-block;
     width: max-content;
   }
@@ -544,6 +533,7 @@ input:placeholder-shown {
   display: block;
 }
 
+/*--FOOTER--*/
 .footer {
   clear: both;
   background-color: black;
@@ -587,6 +577,55 @@ input:placeholder-shown {
 
 .footer--redes {
   display: inline-block;
+}
+
+/*--TABLET--*/
+/*--ESCRITORIO--*/
+@media screen and (min-width: 900px) {
+  .footer {
+    clear: both;
+    background-color: black;
+    color: cornsilk;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-size-adjust: auto;
+  }
+  .footer .bloqueFooter {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .footer--menu {
+    color: cornsilk;
+    align-content: center;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+  }
+  .footer--menu .footer--menu--item {
+    list-style: none;
+    text-align: center;
+  }
+  .footer--menu .footer--menu--item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    line-height: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer--credito {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .footer--redes {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

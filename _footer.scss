@@ -1,3 +1,5 @@
+/*--FOOTER--*/
+
 .footer{
     clear: both;
     background-color: black;
@@ -43,4 +45,61 @@
 
 .footer--redes{
     display: inline-block;
+}
+
+/*--TABLET--*/
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/*--ESCRITORIO--*/
+
+@media screen and (min-width: 900px) {
+    .footer{
+        clear: both;
+        background-color: black;
+        color: cornsilk;
+        padding: 2rem;
+        margin-top: 2rem;
+        text-size-adjust: auto;
+        .bloqueFooter{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: flex-start;
+            align-content: center;
+            flex-wrap: nowrap;
+        }
+    }
+    
+    .footer--menu{
+        color: cornsilk;
+        align-content: center;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        .footer--menu--item{
+            list-style: none;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                line-height: 1rem;
+                flex-wrap: wrap;
+            }
+        } 
+    }
+    
+    
+    
+    .footer--credito {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.7rem;
+    }
+    
+    .footer--redes{
+        display: inline-block;
+    }
 }

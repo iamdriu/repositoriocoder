@@ -44,9 +44,7 @@ body{
 
 .barra, li{
     display: inline-block;
-    width: max-content;
     padding-bottom: 1rem;
-    display: flex; 
     flex-direction: column;
 }
 
@@ -63,20 +61,6 @@ body{
 .barra, a:hover{
     color: grey;
 }
-
-.barra--toogle{
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding-bottom: 0 20px;
-    line-height: 60px;
-    display: block;
-}
-
-.barra--menu__visible{
-    left: 0;
-    }
 
 /*--TABLET--*/
 
@@ -102,6 +86,10 @@ body{
         top: 0;
         left: 0;
     }
+
+    .banner{
+        display: flex;
+    }
     
     .barra{
         padding: 50px;
@@ -113,6 +101,7 @@ body{
     }
     
     .barra, li{
+        display: flex; 
         display: inline-block;
         width: max-content;
     }
