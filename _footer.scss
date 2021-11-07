@@ -6,51 +6,51 @@
     color: cornsilk;
     padding: 2rem;
     margin-top: 2rem;
-    text-size-adjust: auto;
     .bloqueFooter{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: flex-start;
         align-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap;font-size: 0.5rem;
+        line-height: 1rem;
+
     }
 }
-
 .footer--menu{
-    color: cornsilk;
-    align-content: center;
-    margin-bottom: 1rem;
-    margin-left: 5rem;
-    .footer--menu--item{
+    list-style: none;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.footer--menu--item{
         list-style: none;
         text-align: center;
         a{
             text-decoration: none;
             color: white;
-            font-size: 1rem;
-            line-height: 1rem;
+            font-size: 0.5rem;
+            line-height: 0.8rem;
             flex-wrap: wrap;
+            width: max-content;
         }
     } 
-}
 
 
 
 .footer--credito {
     text-align: center;
     padding: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.4rem;
 }
 
 .footer--redes{
     display: inline-block;
+    padding-top: 1rem;
 }
 
-/*--TABLET--*/
-
-@media screen and (min-width: 768px) {
-    
+.legales{
+    padding-top: 1rem;
 }
 
 /*--ESCRITORIO--*/
@@ -78,19 +78,20 @@
         align-content: center;
         margin-bottom: 1rem;
         margin-left: 5rem;
-        .footer--menu--item{
+        font-size: 1rem;
+    }
+
+    .footer--menu--item{
             list-style: none;
             text-align: center;
             a{
                 text-decoration: none;
                 color: white;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 line-height: 1rem;
                 flex-wrap: wrap;
             }
-        } 
-    }
-    
+    }     
     
     
     .footer--credito {
@@ -102,4 +103,11 @@
     .footer--redes{
         display: inline-block;
     }
+
+    
+.legales{
+    display: flex;
+    flex-direction: wrap;
+    padding-top: 1rem;
+}
 }
