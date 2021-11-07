@@ -219,15 +219,16 @@ body {
   padding: 2rem;
 }
 
-.room {
+.secundario--room {
   grid-area: room;
+  border-radius: 10px;
 }
 
-.felices {
+.secundario--felices {
   grid-area: felices;
 }
 
-.work {
+.secundario--work {
   grid-area: work;
 }
 

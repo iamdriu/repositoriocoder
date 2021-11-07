@@ -81,26 +81,31 @@
     padding: 2rem;
 }
 
-.room{
+.secundario--room{
     grid-area: room;
+    border-radius: 10px;
 }
-.felices{
+.secundario--felices{
     grid-area: felices;
 }
-.work{
+.secundario--work{
     grid-area: work;
 }
 
-.secundarioRoom:hover{
+@mixin imagenes {
     transform: scale(1.3)
+}
+
+.secundarioRoom:hover{
+    @include imagenes()
 }
 
 .secundarioFelices:hover{
-    transform: scale(1.3)
+    @include imagenes()
 }
 
 .secundarioCowork:hover{
-    transform: scale(1.3)
+    @include imagenes()
 }
 
 .gastronomia{
