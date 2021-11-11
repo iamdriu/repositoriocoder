@@ -79,11 +79,17 @@
         margin-bottom: 1rem;
         margin-left: 5rem;
         font-size: 1rem;
+        h4{
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
     }
 
     .footer--menu--item{
             list-style: none;
             text-align: center;
+            display: flex;
+            flex-direction: column;
             a{
                 text-decoration: none;
                 color: white;
@@ -102,6 +108,10 @@
     
     .footer--redes{
         display: inline-block;
+        h4{
+            font-size: 0.8rem;
+            padding-bottom: 1rem;
+        }
     }
 
     

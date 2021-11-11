@@ -1058,10 +1058,16 @@ input:placeholder-shown {
     margin-left: 5rem;
     font-size: 1rem;
   }
+  .footer--menu h4 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
 
   .footer--menu--item {
     list-style: none;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   .footer--menu--item a {
     text-decoration: none;
@@ -1079,6 +1085,10 @@ input:placeholder-shown {
 
   .footer--redes {
     display: inline-block;
+  }
+  .footer--redes h4 {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
   }
 
   .legales {
