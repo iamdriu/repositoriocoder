@@ -233,6 +233,10 @@ body {
   transform: scale(1.3);
 }
 
+.roomText {
+  margin-right: 1rem;
+}
+
 .gastronomia {
   background-image: url("https://media.gq.com.mx/photos/615ca052b0eb24842572fbc6/16:9/w_2991,h_1682,c_limit/Comida%20gourmet.jpg");
   background-color: #4B6587;
