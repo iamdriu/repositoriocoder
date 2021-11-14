@@ -37,7 +37,7 @@
 <div id="form2">
 
     <section class="formReserva">
-        <form action="pago.html" method="post" target="nventana" onsubmit="procesar(this.action);">
+        <form action="">
             <fieldset class="cuadro">
                 <legend class="login">Reservas</legend>
                 <label  for="tipo de habitación" class="formularioPadding">Tipo de habitación</label>
@@ -65,12 +65,20 @@
             <div class="formularioPadding2">
                 <input type="checkbox" name="cboxl" required>¿Aceptas los términos y condiciones?</div>
             
-            <input class="buttonReserva" type="submit" value="Reservar">
-
+            <input class="buttons" type="submit" value="Reservar">
             </fieldset>
         </form>
     </section>
 </div>
+
+<section class="formReservaPago">
+<div class="pagoReserva">
+    <form action="">
+        <fieldset class="cuadro">
+            <legend class="tituloReserva">Ya tengo una reserva</legend>     
+            <p ><a id="pagar" class="buttons" href="./pago.html">Ir a pagar mi Reserva</a></p>
+</div>
+</section>
     
 <footer class="footer">
     <div class="bloqueFooter">
