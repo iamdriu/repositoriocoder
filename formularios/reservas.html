@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
 
 </head>
 
@@ -33,61 +34,42 @@
         </nav>
     </header>
 
-<div id="form1">
+<div id="form2">
 
-    <section class="formConsulta">
-    <form action="">
-        <fieldset class="cuadro">
-            <legend class="login">Contactate con nosotros</legend>
-            <label for="name" class="formularioPadding">Nombre</label>
-            <input class="controls" type="text" name="" id="name" placeholder="Ingresá tu nombre" required>
+    <section class="formReserva">
+        <form action="pago.html" method="post" target="nventana" onsubmit="procesar(this.action);">
+            <fieldset class="cuadro">
+                <legend class="login">Reservas</legend>
+                <label  for="tipo de habitación" class="formularioPadding">Tipo de habitación</label>
 
-            <label for="apellido" class="formularioPadding">Apellido</label>
-            <input class="controls" type="text" name="" id="apellido" placeholder="Ingresá tu apellido" required>
- 
-            <label for="telephone" class="formularioPadding">Número de teléfono</label>
-            <input class="controls" type="number" name="" id="telephone" placeholder="Ingresá tu número sin 0 ni 15" required>
-            
-            <label  for="tipo de habitación" class="formularioPadding">Tipo de habitación</label>
-
-            <select name="tipo de habitación" id="">
+            <select name="cantidad de personas" id="" class="people selectorEstilo">
                 <option value="">Selecciona</option>
                 <option value="single">Single</option>
                 <option value="matrimonial">Matrimonial</option>
                 <option value="suite">Suite</option>
             </select>
+
+            <label for="guests" class="formularioPadding">Adultos</label>
+            <input class="controls" type="number" name="" id="telephone" value="1" placeholder="0" required>
+
+            <label for="guests" class="formularioPadding">Niños</label>
+            <input class="controls" type="number" name="" value="0" id="telephone" placeholder="0" required>
+
+            <label for="llegada" class="formularioPadding">Llegada</label>
+            <input class="llegada selectorEstilo" type="date" name=""
+            min="2021-11-13" id="llegada" placeholder="" required>
+
+            <label for="salida" class="formularioPadding">Salida</label>
+            <input class="salida selectorEstilo" type="date" name=""  min="2021-11-13" id="salida" placeholder="" required>
+
+            <div class="formularioPadding2">
+                <input type="checkbox" name="cboxl" required>¿Aceptas los términos y condiciones?</div>
             
-            <label class="formularioPadding" for="pais">País</label>
-            <div></div>
-            <input type="radio" name="pais" value="argentina" checked="checked" class="country">Argentina
-            <div></div>
-            <input type="radio" name="pais" value="uruguay" class="country">Uruguay
-            <div></div>
-            <input type="radio" name="pais" value="brasil" class="country"> Brasil
-            <div></div>
-            <input type="radio" name="pais" value="otro" class="country">Otro
+            <input class="buttonReserva" type="submit" value="Reservar">
 
-
-            <label class="formularioPadding"  for="consulta">Escribí tu consulta</label>
-            <br>
-            <textarea  class="controls" name="" id="" cols="40" rows="10" maxlength="10000"></textarea>
-
-            <div class="formularioPadding">
-            <input type="checkbox" name="cboxl">¿Deseas recibir confirmación por mail?</div>
-
-            <input class="buttonForm" type="submit" value="Enviá tu consulta">
-            <input class="buttonForm" type="reset" value="Limpiar formulario">
-            <input class="buttonForm" type="button" value="No hace nada">
-                
-
-
-
-
-        </fieldset>
-
-
-    </form>
-</section>  
+            </fieldset>
+        </form>
+    </section>
 </div>
     
 <footer class="footer">
@@ -95,17 +77,17 @@
         <div class="container footer--menu">
             <h4>Acerca de</h4>
             <ul class="footer--menu--item">
-                <li> <a href="../formularios/alojamiento.html">Hotel</a></li>
-                <li> <a href="https://hiringroom.com">Empleos</a></li>
-                <li> <a href="../formularios/contacto.html">Contactos</a></li>
+                <li> <a href="#">Hotel</a></li>
+                <li> <a href="#">Empleos</a></li>
+                <li> <a href="#">Contactos</a></li>
             </ul>
         </div>
         <div class="container footer--menu">
             <h4>Reservas</h4>
             <ul class="footer--menu--item">
-                <li class="barra--menu--item"> <a href="../formularios/reservas.html">Buscar Reserva</a></li>
-                <li> <a href="../formularios/contacto.html">Solicitar Factura</a></li>
-                <li> <a href="../formularios/contacto.html">Eventos y Reuniones</a></li>
+                <li> <a href="#">Buscar Reserva</a></li>
+                <li> <a href="#">Solicitar Factura</a></li>
+                <li> <a href="#">Eventos y Reuniones</a></li>
             </ul>
         </div>
         <div class="container footer--menu">
@@ -122,22 +104,25 @@
         <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></li></a>
         <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
         <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
     </ul>
     </div>
     
     <div class="container">
     <div class="footer--legales">
         <ul>
-            <li><a href="../formularios/legales.html">Aviso Legal</a></li>
-            <li><a href="../formularios/legales.html">Políticas de privacidad</a></li>
-            <li><a href="../formularios/legales.html">Cookies</a></li>
+            <li><a href="#">Aviso Legal</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
+            <li><a href="#">Cookies</a></li>
         </ul>
     </div>
 </div>
     </div class="container">
     <div class="footer--credito">Desarrollado por Andrés Martinez</div>
 </div>
-    </footer>  
+    </footer> 
       
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="../js/main.js"></script>
 </body>
 </html>

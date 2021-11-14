@@ -173,12 +173,10 @@ body {
 
 .secundarioRoom, h2 {
   margin-bottom: 1rem;
-  margin-left: 5rem;
 }
 
 .secundarioRoom, h5 {
   margin-bottom: 1rem;
-  margin-left: 5rem;
   color: green;
   font-weight: 600;
 }
@@ -301,75 +299,113 @@ input:placeholder-shown {
 
 /*-----Sobre Nosotros----*/
 .nosotrosPrincipal {
-  padding: 8rem;
-  display: grid;
-  grid-template-areas: "alojamientoTitulo" "alojamientoBody";
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  grid-template-rows: 0.2fr 1fr;
   align-content: space-around;
   align-items: center;
   justify-items: center;
+  padding-top: 30%;
+}
+.nosotrosPrincipal .nosotrosTitulo {
+  padding-bottom: 3rem;
 }
 
 .nosotrosSecundario {
-  background-color: #f2f4f6;
+  background-color: black;
   padding: 2rem;
-  display: grid;
-  grid-template-areas: "mision" "nosotrosSecundarioMision" "vision" "nosotrosSecundarioVision" "valores" "nosotrosSecundarioValores";
-  justify-content: space-around;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.nosotrosSecundario .nosotrosSecundarioContenedor {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
 }
 
 .nosotrosSecundarioMision {
-  color: #706f6f;
+  color: #f2f4f6;
   padding: 2rem;
   width: 65%;
   font-size: 0.8rem;
   line-height: 1.8rem;
-  text-align: justify;
+  text-align: left;
+  margin-left: 15%;
   grid-area: nosotrosSecundarioMision;
 }
 
 .nosotrosSecundarioVision {
-  color: #706f6f;
+  color: #f2f4f6;
   padding: 2rem;
   width: 65%;
   font-size: 0.8rem;
   line-height: 1.8rem;
-  text-align: justify;
+  text-align: left;
+  margin-left: 15%;
   grid-area: nosotrosSecundarioVision;
 }
 
 .nosotrosSecundarioValores {
-  color: #706f6f;
+  color: #f2f4f6;
   padding: 2rem;
   width: 65%;
   font-size: 0.8rem;
   line-height: 1.8rem;
-  text-align: justify;
+  text-align: left;
+  margin-left: 15%;
   grid-area: nosotrosSecundarioValores;
 }
 
 .mision {
   grid-area: mision;
   text-align: center;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .vision {
   grid-area: vision;
   text-align: center;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .valores {
   grid-area: valores;
   text-align: center;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.mapa .mapaTitulo {
+  margin-left: 0%;
+}
+.mapa iframe {
+  width: 250px;
+  height: 150px;
 }
 
 /*-----Alojamiento----*/
 .alojamientoPrincipal {
-  padding: 8rem;
+  padding-top: 20%;
   display: grid;
   grid-template-areas: "alojamientoTitulo" "alojamientoBody";
   justify-content: space-between;
@@ -406,8 +442,8 @@ input:placeholder-shown {
 }
 
 .formLogin {
-  width: 200px;
-  height: 380px;
+  width: 210px;
+  height: 390px;
   background: black;
   margin: auto;
   margin-top: 10px;
@@ -433,7 +469,7 @@ input:placeholder-shown {
   margin-bottom: 15px;
   padding: 11px 10px;
   background: white;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -490,7 +526,7 @@ input:placeholder-shown {
 /*-----CSS FormConsulta----*/
 .formConsulta {
   width: 250px;
-  height: 800px;
+  height: 900px;
   background: black;
   margin: auto;
   margin-top: 150px;
@@ -533,6 +569,368 @@ input:placeholder-shown {
   font-size: 0.8rem;
 }
 
+/*--RESERVAS--*/
+.formReserva {
+  width: 250px;
+  height: 600px;
+  background: black;
+  margin: auto;
+  margin-top: 150px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.people {
+  width: 100px;
+}
+
+.buttonReserva {
+  text-decoration: none;
+  padding: 6px;
+  font-weight: 600;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #303030;
+  border-radius: 6px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.buttonForm:hover {
+  color: #7391b8;
+  background-color: #ffffff;
+  border: 2px solid #4B6587;
+}
+
+.formularioPadding2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.selectorEstilo {
+  border: 1px solid silver;
+  border-radius: 4px;
+  padding: 0 10px;
+  height: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+/* ---------- Estilos Generales de las Tarjetas ----------*/
+.tarjeta {
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  color: #fff;
+  transition: 0.3s ease all;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.tarjeta.active {
+  transform: rotateY(180deg);
+}
+
+.tarjeta > div {
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px 0 rgba(0, 85, 212, 0.4);
+}
+
+/* ---------- Tarjeta Delantera ----------*/
+.tarjeta .delantera {
+  width: 100%;
+  background: url("https://crehana-blog.s3.amazonaws.com/media/filer_public/fc/e0/fce032c0-7a51-4176-8cf1-b98f6cb34d21/fondos-pantalla-pc-3d-1.png");
+  background-size: cover;
+}
+
+.delantera .logo-marca {
+  text-align: right;
+  min-height: 50px;
+}
+
+.delantera .logo-marca img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 80px;
+}
+
+.delantera .chip {
+  width: 100%;
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+
+.delantera .grupo .label {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.delantera .flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* ---------- Tarjeta Trasera ----------*/
+.trasera {
+  background: url("https://crehana-blog.s3.amazonaws.com/media/filer_public/fc/e0/fce032c0-7a51-4176-8cf1-b98f6cb34d21/fondos-pantalla-pc-3d-1.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.trasera .barra-magnetica {
+  height: 40px;
+  background: #000;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.trasera .datos {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trasera .datos p {
+  margin-bottom: 5px;
+}
+
+.trasera .datos #firma {
+  width: 70%;
+}
+
+.trasera .datos #firma .firma {
+  height: 40px;
+  background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+
+.trasera .datos #firma .firma p {
+  line-height: 40px;
+  font-family: "Liu Jian Mao Cao", cursive;
+  color: #000;
+  font-size: 30px;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+.trasera .datos #ccv {
+  width: 20%;
+}
+
+.trasera .datos #ccv .ccv {
+  background: #fff;
+  height: 40px;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.trasera .leyenda {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.trasera .link-banco {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* ---------- Contenedor Boton ----------*/
+.contenedor-btn .btn-abrir-formulario {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 20px;
+  background: #303030;
+  color: #fff;
+  position: relative;
+  top: -25px;
+  z-index: 3;
+  border-radius: 100%;
+  box-shadow: -5px 4px 8px;
+  padding: 5px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.contenedor-btn .btn-abrir-formulario:hover {
+  background: black;
+}
+
+.contenedor-btn .btn-abrir-formulario.active {
+  transform: rotate(45deg);
+}
+
+/* ---------- Formulario Tarjeta ----------*/
+.formulario-tarjeta {
+  background: black;
+  width: 100%;
+  max-width: 700px;
+  padding: 150px 30px 30px 30px;
+  border-radius: 10px;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.3s ease-out;
+}
+
+.formulario-tarjeta.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.formulario-tarjeta label {
+  display: block;
+  color: #c5c8cc;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+  border: 2px solid #CED6E0;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  padding: 5px 12px;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+  border: 2px solid #93BDED;
+}
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+  outline: #040404;
+  box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3);
+}
+
+.formulario-tarjeta input {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario-tarjeta .expira {
+  width: 100%;
+}
+
+.formulario-tarjeta .ccv {
+  min-width: 100px;
+}
+
+.formulario-tarjeta .grupo-select {
+  width: 100%;
+  margin-right: 15px;
+  position: relative;
+}
+
+.formulario-tarjeta select {
+  -webkit-appearance: none;
+}
+
+.formulario-tarjeta .grupo-select i {
+  position: absolute;
+  color: #CED6E0;
+  top: 18px;
+  right: 15px;
+  transition: 0.3s ease all;
+}
+
+.formulario-tarjeta .grupo-select:hover i {
+  color: #93bfed;
+}
+
+.formulario-tarjeta .btn-enviar {
+  border: none;
+  padding: 10px;
+  font-size: 22px;
+  color: #fff;
+  background: #303030;
+  box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, 0.4);
+  cursor: pointer;
+}
+
+.formulario-tarjeta .btn-enviar:hover {
+  background: white;
+  border: black;
+  color: black;
+}
+
+/*--Legales--*/
+.legalesPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  justify-items: center;
+  padding-top: 30%;
+}
+.legalesPrincipal .legalesTitulo {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.legalesPrincipal .legalesTitulo .LegalesTituloContenido {
+  text-align: center;
+}
+.legalesPrincipal .legalesSecundarioContenedor {
+  padding-top: 1rem;
+}
+
+.legalesSecundario {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
 /*--TABLET--*/
 @media screen and (min-width: 768px) {
   #secundario {
@@ -542,6 +940,109 @@ input:placeholder-shown {
     justify-content: space-around;
     margin-bottom: 2rem;
     align-items: flex-start;
+  }
+
+  /*--Sobre nosotros--*/
+  .nosotrosPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+    padding-top: 15%;
+  }
+
+  .nosotrosSecundario {
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotrosSecundario .nosotrosSecundarioContenedor {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nosotrosSecundarioMision {
+    color: #f2f4f6;
+    padding: 2rem;
+    width: 65%;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    text-align: left;
+    margin-left: 15%;
+    grid-area: nosotrosSecundarioMision;
+  }
+
+  .nosotrosSecundarioVision {
+    color: #f2f4f6;
+    padding: 2rem;
+    width: 65%;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    text-align: left;
+    margin-left: 15%;
+    grid-area: nosotrosSecundarioVision;
+  }
+
+  .nosotrosSecundarioValores {
+    color: #f2f4f6;
+    padding: 2rem;
+    width: 65%;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    text-align: left;
+    margin-left: 15%;
+    grid-area: nosotrosSecundarioValores;
+  }
+
+  .mision {
+    grid-area: mision;
+    text-align: center;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vision {
+    grid-area: vision;
+    text-align: center;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .valores {
+    grid-area: valores;
+    text-align: center;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapa .mapaTitulo {
+    margin-left: 0%;
+  }
+  .mapa iframe {
+    width: 250px;
+    height: 150px;
   }
 
   /*-----CSS Login----*/
@@ -617,16 +1118,16 @@ input:placeholder-shown {
     border-radius: 50%;
     background-size: 100% auto;
     padding: 2rem;
+    margin-left: 30%;
   }
 
   .secundarioRoom, h2 {
     margin-bottom: 1rem;
-    margin-left: 5rem;
+    text-align: center;
   }
 
   .secundarioRoom, h5 {
     margin-bottom: 1rem;
-    margin-left: 5rem;
     color: green;
     font-weight: 600;
   }
@@ -639,6 +1140,9 @@ input:placeholder-shown {
     border-radius: 50%;
     background-size: 100% auto;
     padding: 2rem;
+    justify-items: center;
+    align-content: center;
+    margin-left: 30%;
   }
 
   .secundarioCowork {
@@ -649,6 +1153,7 @@ input:placeholder-shown {
     border-radius: 50%;
     background-size: 100% auto;
     padding: 2rem;
+    margin-left: 30%;
   }
 
   .secundario--room {
@@ -745,75 +1250,111 @@ input:placeholder-shown {
 
   /*-----Sobre Nosotros----*/
   .nosotrosPrincipal {
-    padding: 8rem;
-    display: grid;
-    grid-template-areas: "alojamientoTitulo" "alojamientoBody";
-    justify-content: space-between;
-    grid-template-rows: 0.2fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-content: space-around;
     align-items: center;
     justify-items: center;
+    background-color: #f2f4f6;
+    padding-top: 8%;
+  }
+  .nosotrosPrincipal .nosotrosTitulo {
+    padding-bottom: 3rem;
   }
 
   .nosotrosSecundario {
-    background-color: #f2f4f6;
+    background-color: black;
     padding: 2rem;
-    display: grid;
-    grid-template-areas: "mision vision valores" "nosotrosSecundarioMision nosotrosSecundarioVision nosotrosSecundarioValores";
-    justify-content: space-around;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .nosotrosSecundario .nosotrosSecundarioContenedor {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+    justify-content: space-between;
   }
 
   .nosotrosSecundarioMision {
-    color: #706f6f;
-    padding: 2rem;
+    color: #f2f4f6;
+    padding: 0rem;
     width: 65%;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    text-align: justify;
+    text-align: center;
     grid-area: nosotrosSecundarioMision;
   }
 
   .nosotrosSecundarioVision {
-    color: #706f6f;
-    padding: 2rem;
+    color: #f2f4f6;
+    padding: 0rem;
     width: 65%;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    text-align: justify;
+    text-align: center;
     grid-area: nosotrosSecundarioVision;
   }
 
   .nosotrosSecundarioValores {
-    color: #706f6f;
-    padding: 2rem;
+    color: #f2f4f6;
+    padding: 0rem;
     width: 65%;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    text-align: justify;
+    text-align: center;
     grid-area: nosotrosSecundarioValores;
   }
 
   .mision {
     grid-area: mision;
     text-align: center;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .vision {
     grid-area: vision;
     text-align: center;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .valores {
     grid-area: valores;
     text-align: center;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapa .mapaTitulo {
+    margin-left: 0%;
+  }
+  .mapa iframe {
+    width: 1000px;
+    height: 450px;
   }
 
   /*-----Alojamiento----*/
   .alojamientoPrincipal {
-    padding: 8rem;
+    padding-top: 10%;
     display: grid;
     grid-template-areas: "alojamientoTitulo" "alojamientoBody";
     justify-content: space-between;
@@ -975,6 +1516,95 @@ input:placeholder-shown {
     padding-bottom: 0.5rem;
     display: block;
     font-size: 16px;
+  }
+
+  /*--RESERVAS--*/
+  .formReserva {
+    width: 400px;
+    height: 600px;
+    background: black;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 2rem;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .formReserva .people {
+    width: 100px;
+  }
+
+  .buttonReserva {
+    text-decoration: none;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #303030;
+    border-radius: 6px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+  .buttonForm:hover {
+    color: #7391b8;
+    background-color: #ffffff;
+    border: 2px solid #4B6587;
+  }
+
+  .formularioPadding2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .selectorEstilo {
+    border: 1px solid silver;
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+  }
+
+  /*--Legales--*/
+  .legalesPrincipal {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding: 8rem;
+  }
+  .legalesPrincipal .legalesTitulo {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .legalesPrincipal .legalesTitulo .LegalesTituloContenido {
+    text-align: center;
+    flex-wrap: nowrap;
+    padding: 2rem;
+  }
+  .legalesPrincipal .legalesSecundarioContenedor {
+    padding-top: 2rem;
+  }
+
+  .legalesSecundario {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .legalesSecundario .legalesSubTitulos {
+    padding-bottom: 1rem;
   }
 }
 /*--FOOTER--*/
