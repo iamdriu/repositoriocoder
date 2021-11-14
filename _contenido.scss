@@ -636,8 +636,8 @@ table, th, td{
     }
     
     .trasera .leyenda {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 8px;
+        line-height: 20px;
     }
     
     .trasera .link-banco {
@@ -1474,6 +1474,10 @@ align-items: center;
 .legalesSubTitulos{
     padding-bottom: 1rem;
 }
+}
+
+.trasera .leyenda {
+    font-size: 10px;
 }
       
 }
