@@ -1182,7 +1182,7 @@ input:placeholder-shown {
 
   .gastronomia {
     background-image: url("https://media.gq.com.mx/photos/615ca052b0eb24842572fbc6/16:9/w_2991,h_1682,c_limit/Comida%20gourmet.jpg");
-    background-color: #4B6587;
+    background-color: black;
     color: white;
     font-weight: normal;
     background-size: cover;
