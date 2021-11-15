@@ -234,11 +234,10 @@ body {
   background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-simple-black-gourmet-menu-background-picture-image_1317710.jpg");
   background-color: black;
   color: white;
-  font-weight: 600;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 35vh;
+  height: 30vh;
   padding: 2rem;
 }
 
@@ -1184,7 +1183,6 @@ input:placeholder-shown {
     background-image: url("https://media.gq.com.mx/photos/615ca052b0eb24842572fbc6/16:9/w_2991,h_1682,c_limit/Comida%20gourmet.jpg");
     background-color: black;
     color: white;
-    font-weight: normal;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
