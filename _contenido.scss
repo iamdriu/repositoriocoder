@@ -295,6 +295,60 @@ table, th, td{
     grid-area: alojamientoBody;
 }
 
+/*----Fotos y Vídeos-----*/
+
+.picsSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin picSection {
+    height: 250px;
+    width: 300px;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    background-size: 100% auto;
+    padding: 2rem;
+}
+
+.picSection1{
+    @include picSection();
+}
+.picSection2{
+    @include picSection();
+}
+.picSection3{
+    @include picSection();
+}
+.picSection4{
+    @include picSection();
+}
+.picSection5{
+    @include picSection();
+}
+.picSection6{
+    @include picSection();
+}
+
+.videoPics{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    iframe{
+        width: 250px;
+        height: 140px;
+    }
+}
+
 /*-----CSS Login----*/
 
   #form0{
@@ -915,8 +969,42 @@ table, th, td{
         }
     }
 
-    /*-----CSS Login----*/
+/*-----CSS Login----*/
 
+    @mixin picSection {
+        height: 400px;
+        width: 550px;
+        background-repeat: no-repeat;
+        border-radius: 15%;
+        background-size: 100% auto;
+        padding: 2rem;
+    }
+    .picSection1{
+        @include picSection();
+    }
+    .picSection2{
+        @include picSection();
+    }
+    .picSection3{
+        @include picSection();
+    }
+    .picSection4{
+        @include picSection();
+    }
+    .picSection5{
+        @include picSection();
+    }
+    .picSection6{
+        @include picSection();
+    }
+
+    .videoPics{
+        iframe{
+            width: 500px;
+            height: 280px;
+        }
+    }
+/*-----CSS Login----*/
 
   .formLogin{
       width: 300px;
@@ -1252,6 +1340,15 @@ table, th, td{
         grid-area: alojamientoBody;
     }
     
+    /*-----Fotos y Vídeos----*/
+
+    .videoPics{
+        iframe{
+            width: 850px;
+            height: 390px;
+        }
+    }
+
     /*-----CSS Login----*/
     
       #form0{
