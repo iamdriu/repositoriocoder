@@ -998,6 +998,28 @@ table, th, td{
         @include picSection();
     }
 
+    @mixin hover {
+        transform: scale(1.1)
+    }
+    .picSection1:hover{
+        @include hover();
+    }
+    .picSection2:hover{
+        @include hover();
+    }  
+    .picSection3:hover{
+        @include hover();
+    }  
+    .picSection4:hover{
+        @include hover();
+    }  
+    .picSection5:hover{
+        @include hover();
+    }  
+    .picSection6:hover{
+        @include hover();
+    }     
+
     .videoPics{
         iframe{
             width: 500px;
@@ -1324,10 +1346,12 @@ table, th, td{
         align-content: space-around;
         align-items: center;
         justify-items: center;
+        font-weight: 600;
     }
     
     .alojamientoPrincipal, h1{
         grid-area: alojamientoTitulo;
+
     }
     
     .alojamientoBody{
@@ -1348,6 +1372,8 @@ table, th, td{
             height: 390px;
         }
     }
+
+
 
     /*-----CSS Login----*/
     

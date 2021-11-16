@@ -1178,6 +1178,30 @@ input:placeholder-shown {
     padding: 2rem;
   }
 
+  .picSection1:hover {
+    transform: scale(1.1);
+  }
+
+  .picSection2:hover {
+    transform: scale(1.1);
+  }
+
+  .picSection3:hover {
+    transform: scale(1.1);
+  }
+
+  .picSection4:hover {
+    transform: scale(1.1);
+  }
+
+  .picSection5:hover {
+    transform: scale(1.1);
+  }
+
+  .picSection6:hover {
+    transform: scale(1.1);
+  }
+
   .videoPics iframe {
     width: 500px;
     height: 280px;
@@ -1500,6 +1524,7 @@ input:placeholder-shown {
     align-content: space-around;
     align-items: center;
     justify-items: center;
+    font-weight: 600;
   }
 
   .alojamientoPrincipal, h1 {
