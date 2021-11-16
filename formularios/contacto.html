@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjumi Hotels</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -26,111 +28,116 @@
                 <li><a href="../formularios/alojamiento.html">Alojamiento</a> </li>
                 <li><a href="../formularios/fotosyvideos.html">Fotos y Videos</a></li>
                 <li><a href="../formularios/ofertas.html">Ofertas</a></li>
-                <li ><a href="../formularios/reservas.html">Reserva</a></li>
-                <li ><a href="../formularios/contacto.html">Contacto</a> </li>
+                <li><a href="../formularios/reservas.html">Reserva</a></li>
+                <li><a href="../formularios/contacto.html">Contacto</a> </li>
                 <li><a href="../formularios/logueo.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
 
-<div id="form1">
+    <div id="form1">
 
-    <section class="formConsulta">
-    <form action="">
-        <fieldset class="cuadro">
-            <legend class="login">Contactate con nosotros</legend>
-            <label for="name" class="formularioPadding">Nombre</label>
-            <input class="controls" type="text" name="" id="name" placeholder="Ingresá tu nombre" required>
+        <section class="formConsulta">
+            <form action="">
+                <fieldset class="cuadro">
+                    <legend class="login">Contactate con nosotros</legend>
+                    <label for="name" class="formularioPadding">Nombre</label>
+                    <input class="controls" type="text" name="name" id="name" placeholder="Ingresá tu nombre" required>
 
-            <label for="apellido" class="formularioPadding">Apellido</label>
-            <input class="controls" type="text" name="" id="apellido" placeholder="Ingresá tu apellido" required>
- 
-            <label for="telephone" class="formularioPadding">Número de teléfono</label>
-            <input class="controls" type="number" name="" id="telephone" placeholder="Ingresá tu número sin 0 ni 15" required>
-            
-            <label  for="tipo de habitación" class="formularioPadding">Tipo de habitación</label>
+                    <label for="apellido" class="formularioPadding">Apellido</label>
+                    <input class="controls" type="text" name="lastname" id="apellido" placeholder="Ingresá tu apellido"
+                        required>
 
-            <select name="tipo de habitación" id="">
-                <option value="">Selecciona</option>
-                <option value="single">Single</option>
-                <option value="matrimonial">Matrimonial</option>
-                <option value="suite">Suite</option>
-            </select>
-            
-            <label class="formularioPadding" for="pais">País</label>
-            <div></div>
-            <input type="radio" name="pais" value="argentina" checked="checked" class="country">Argentina
-            <div></div>
-            <input type="radio" name="pais" value="uruguay" class="country">Uruguay
-            <div></div>
-            <input type="radio" name="pais" value="brasil" class="country"> Brasil
-            <div></div>
-            <input type="radio" name="pais" value="otro" class="country">Otro
+                    <label for="telephone" class="formularioPadding">Número de teléfono</label>
+                    <input class="controls" type="number" name="telephone" id="telephone"
+                        placeholder="Ingresá tu número sin 0 ni 15" required>
 
+                    <label for="tipoDeHabitacion" class="formularioPadding">Tipo de habitación</label>
 
-            <label class="formularioPadding"  for="consulta">Escribí tu consulta</label>
-            <br>
-            <textarea  class="controls" name="" id="" cols="40" rows="10" maxlength="10000"></textarea>
+                    <select name="tipoDeHabitacion">
+                        <option value="">Selecciona</option>
+                        <option value="single">Single</option>
+                        <option value="matrimonial">Matrimonial</option>
+                        <option value="suite">Suite</option>
+                    </select>
 
-            <div class="formularioPadding">
-            <input type="checkbox" name="cboxl">¿Deseas recibir confirmación por mail?</div>
-
-            <input class="buttonForm" type="submit" value="Enviá tu consulta">
-            <input class="buttonForm" type="reset" value="Limpiar formulario">
-            <input class="buttonForm" type="button" value="No hace nada">
-                
+                    <label class="formularioPadding" for="pais">País</label>
+                    <div></div>
+                    <input type="radio" name="pais" value="argentina" checked="checked" class="country">Argentina
+                    <div></div>
+                    <input type="radio" name="pais" value="uruguay" class="country">Uruguay
+                    <div></div>
+                    <input type="radio" name="pais" value="brasil" class="country"> Brasil
+                    <div></div>
+                    <input type="radio" name="pais" value="otro" class="country">Otro
 
 
+                    <label class="formularioPadding" for="consulta">Escribí tu consulta</label>
+                    <br>
+                    <textarea class="controls" name="controls" cols="40" rows="10" maxlength="10000"></textarea>
+
+                    <div class="formularioPadding">
+                        <input type="checkbox" name="cboxl">¿Deseas recibir confirmación por mail?
+                    </div>
+
+                    <input class="buttonForm" type="submit" value="Enviá tu consulta">
+                    <input class="buttonForm" type="reset" value="Limpiar formulario">
+                    <input class="buttonForm" type="button" value="No hace nada">
 
 
-        </fieldset>
 
 
-    </form>
-</section>  
-</div>
-    
-<footer class="footer">
-    <div class="bloqueFooter">
-        <div class="container footer--menu">
-            <h4>Acerca de</h4>
-            <ul class="footer--menu--item">
-                <li> <a href="../formularios/alojamiento.html">Hotel</a></li>
-                <li> <a href="https://hiringroom.com">Empleos</a></li>
-                <li> <a href="../formularios/contacto.html">Contactos</a></li>
-            </ul>
-        </div>
-        <div class="container footer--menu">
-            <h4>Reservas</h4>
-            <ul class="footer--menu--item">
-                <li class="barra--menu--item"> <a href="../formularios/reservas.html">Buscar Reserva</a></li>
-                <li> <a href="../formularios/contacto.html">Solicitar Factura</a></li>
-                <li> <a href="../formularios/contacto.html">Eventos y Reuniones</a></li>
-            </ul>
-        </div>
-        
-    <div class="footer--redes">
-        <h4>Seguinos en nuestras redes</h4>
-    <ul>
-        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-    </ul>
+
+                </fieldset>
+
+
+            </form>
+        </section>
     </div>
-    
-    <div class="container">
-    <div class="footer--legales">
-        <ul>
-            <li><a href="../formularios/legales.html">Aviso Legal</a></li>
-            <li><a href="../formularios/legales.html">Políticas de privacidad</a></li>
-            <li><a href="../formularios/legales.html">Cookies</a></li>
-        </ul>
-    </div>
-</div>
-    </div class="container">
-    <div class="footer--credito">Desarrollado por Andrés Martinez</div>
-</div>
-    </footer>  
-      
+
+    <footer class="footer">
+        <div class="bloqueFooter">
+            <div class="container footer--menu">
+                <h4>Acerca de</h4>
+                <ul class="footer--menu--item">
+                    <li> <a href="../formularios/alojamiento.html">Hotel</a></li>
+                    <li> <a href="https://hiringroom.com">Empleos</a></li>
+                    <li> <a href="../formularios/contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="container footer--menu">
+                <h4>Reservas</h4>
+                <ul class="footer--menu--item">
+                    <li class="barra--menu--item"> <a href="../formularios/reservas.html">Buscar Reserva</a></li>
+                    <li> <a href="../formularios/contacto.html">Solicitar Factura</a></li>
+                    <li> <a href="../formularios/contacto.html">Eventos y Reuniones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer--redes">
+                <h4>Seguinos en nuestras redes</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="footer--legales">
+                    <ul>
+                        <li><a href="../formularios/legales.html">Aviso Legal</a></li>
+                        <li><a href="../formularios/legales.html">Políticas de privacidad</a></li>
+                        <li><a href="../formularios/legales.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer--credito">Desarrollado por Andrés Martinez</div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

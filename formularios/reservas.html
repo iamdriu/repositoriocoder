@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjumi Hotels</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
@@ -27,102 +29,110 @@
                 <li><a href="../formularios/alojamiento.html">Alojamiento</a> </li>
                 <li><a href="../formularios/fotosyvideos.html">Fotos y Videos</a></li>
                 <li><a href="../formularios/ofertas.html">Ofertas</a></li>
-                <li ><a href="../formularios/reservas.html">Reserva</a></li>
-                <li ><a href="../formularios/contacto.html">Contacto</a> </li>
+                <li><a href="../formularios/reservas.html">Reserva</a></li>
+                <li><a href="../formularios/contacto.html">Contacto</a> </li>
                 <li><a href="../formularios/logueo.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
 
-<div id="form2">
+    <div id="form2">
 
-    <section class="formReserva">
-        <form action="">
-            <fieldset class="cuadro">
-                <legend class="login">Reservas</legend>
-                <label  for="tipo de habitación" class="formularioPadding">Tipo de habitación</label>
+        <section class="formReserva">
+            <form action="">
+                <fieldset class="cuadro">
+                    <legend class="login">Reservas</legend>
+                    <label for="tipoDeHabitacion" class="formularioPadding">Tipo de habitación</label>
 
-            <select name="cantidad de personas" id="" class="people selectorEstilo">
-                <option value="">Selecciona</option>
-                <option value="single">Single</option>
-                <option value="matrimonial">Matrimonial</option>
-                <option value="suite">Suite</option>
-            </select>
+                    <select name="cantidadDePersonas" id="" class="people selectorEstilo">
+                        <option value="">Selecciona</option>
+                        <option value="single">Single</option>
+                        <option value="matrimonial">Matrimonial</option>
+                        <option value="suite">Suite</option>
+                    </select>
 
-            <label for="guests" class="formularioPadding">Adultos</label>
-            <input class="controls" type="number" name="" id="telephone" value="1" placeholder="0" required>
+                    <label for="guests" class="formularioPadding">Adultos</label>
+                    <input class="controls" type="number" name="telephone" value="1" placeholder="0"
+                        required>
 
-            <label for="guests" class="formularioPadding">Niños</label>
-            <input class="controls" type="number" name="" value="0" id="telephone" placeholder="0" required>
+                    <label for="guests" class="formularioPadding">Niños</label>
+                    <input class="controls" type="number" name="telephone" value="0" placeholder="0"
+                        required>
 
-            <label for="llegada" class="formularioPadding">Llegada</label>
-            <input class="llegada selectorEstilo" type="date" name=""
-            min="2021-11-13" id="llegada" placeholder="" required>
+                    <label for="llegada" class="formularioPadding">Llegada</label>
+                    <input class="llegada selectorEstilo" type="date" name="date" min="2021-11-13" id="llegada"
+                        required>
 
-            <label for="salida" class="formularioPadding">Salida</label>
-            <input class="salida selectorEstilo" type="date" name=""  min="2021-11-13" id="salida" placeholder="" required>
+                    <label for="salida" class="formularioPadding">Salida</label>
+                    <input class="salida selectorEstilo" type="date" name="date" min="2021-11-13" id="salida"
+                        required>
 
-            <div class="formularioPadding2">
-                <input type="checkbox" name="cboxl" required>¿Aceptas los términos y condiciones?</div>
-            
-            <input class="buttons" type="submit" value="Reservar">
-            </fieldset>
-        </form>
+                    <div class="formularioPadding2">
+                        <input type="checkbox" name="cboxl" required>¿Aceptas los términos y condiciones?
+                    </div>
+
+                    <input class="buttons" type="submit" value="Reservar">
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <section class="formReservaPago">
+        <div class="pagoReserva">
+            <form action="">
+                <fieldset class="cuadro">
+                    <legend class="tituloReserva">Ya tengo una reserva</legend>
+                    <p><a id="pagar" class="buttons" href="./pago.html">Ir a pagar mi Reserva</a></p>
+                </fieldset>
+            </form>
+        </div>
     </section>
-</div>
 
-<section class="formReservaPago">
-<div class="pagoReserva">
-    <form action="">
-        <fieldset class="cuadro">
-            <legend class="tituloReserva">Ya tengo una reserva</legend>     
-            <p ><a id="pagar" class="buttons" href="./pago.html">Ir a pagar mi Reserva</a></p>
-</div>
-</section>
-    
-<footer class="footer">
-    <div class="bloqueFooter">
-        <div class="container footer--menu">
-            <h4>Acerca de</h4>
-            <ul class="footer--menu--item">
-                <li> <a href="../formularios/alojamiento.html">Hotel</a></li>
-                <li> <a href="https://hiringroom.com">Empleos</a></li>
-                <li> <a href="../formularios/contacto.html">Contactos</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="bloqueFooter">
+            <div class="container footer--menu">
+                <h4>Acerca de</h4>
+                <ul class="footer--menu--item">
+                    <li> <a href="../formularios/alojamiento.html">Hotel</a></li>
+                    <li> <a href="https://hiringroom.com">Empleos</a></li>
+                    <li> <a href="../formularios/contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="container footer--menu">
+                <h4>Reservas</h4>
+                <ul class="footer--menu--item">
+                    <li class="barra--menu--item"> <a href="../formularios/reservas.html">Buscar Reserva</a></li>
+                    <li> <a href="../formularios/contacto.html">Solicitar Factura</a></li>
+                    <li> <a href="../formularios/contacto.html">Eventos y Reuniones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer--redes">
+                <h4>Seguinos en nuestras redes</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="footer--legales">
+                    <ul>
+                        <li><a href="../formularios/legales.html">Aviso Legal</a></li>
+                        <li><a href="../formularios/legales.html">Políticas de privacidad</a></li>
+                        <li><a href="../formularios/legales.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="container footer--menu">
-            <h4>Reservas</h4>
-            <ul class="footer--menu--item">
-                <li class="barra--menu--item"> <a href="../formularios/reservas.html">Buscar Reserva</a></li>
-                <li> <a href="../formularios/contacto.html">Solicitar Factura</a></li>
-                <li> <a href="../formularios/contacto.html">Eventos y Reuniones</a></li>
-            </ul>
+        <div class="container">
+            <div class="footer--credito">Desarrollado por Andrés Martinez</div>
         </div>
-        
-    <div class="footer--redes">
-        <h4>Seguinos en nuestras redes</h4>
-    <ul>
-        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-    </ul>
-    </div>
-    
-    <div class="container">
-    <div class="footer--legales">
-        <ul>
-            <li><a href="../formularios/legales.html">Aviso Legal</a></li>
-            <li><a href="../formularios/legales.html">Políticas de privacidad</a></li>
-            <li><a href="../formularios/legales.html">Cookies</a></li>
-        </ul>
-    </div>
-</div>
-    </div class="container">
-    <div class="footer--credito">Desarrollado por Andrés Martinez</div>
-</div>
-    </footer> 
-      
+    </footer>
+
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
